@@ -12,8 +12,18 @@ include("conn.php");
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Oswald:400,700"> 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/logins.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/mediaelementplayer.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/fl-bigmug-line.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
     
     
   </head>
@@ -21,7 +31,7 @@ include("conn.php");
   
     <form class="form-group" method="POST" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]);?>">
     <div class="col-8 col-md-8 col-lg-4">
-              <h1 class="mb-0"><a href="index" class="text-white h2 mb-0"><strong>Tan<span class="text-primary">.</span></strong></a></h1>
+    <h1 class="mb-0"><a href="index" class="text-white h2 mb-0"><strong>Tan<span class="text-primary">.</span></strong></a></h1>
             </div>
     <center><br><br><br><br><br><br><br><br>
     <div class="logcard">

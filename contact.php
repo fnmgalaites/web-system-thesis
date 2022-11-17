@@ -1,3 +1,7 @@
+<?php
+include("conn.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,11 +22,12 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/fl-bigmug-line.css">
+    <link rel="stylesheet" href="css/contact.css">
     
   
     <link rel="stylesheet" href="css/aos.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     
   </head>
   <body>
@@ -36,19 +41,21 @@
         <div class="container py-1">
           <div class="row align-items-center">
             <div class="col-8 col-md-8 col-lg-4">
-              <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><strong>Apart<span class="text-primary">.</span></strong></a></h1>
+              <h1 class="mb-0"><a href="index" class="text-white h2 mb-0"><strong>Tan<span class="text-primary">.</span></strong></a></h1>
             </div>
             <div class="col-4 col-md-4 col-lg-8">
               <nav class="site-navigation text-right text-md-right" role="navigation">
 
                 <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+                
 
                 <ul class="site-menu js-clone-nav d-none d-lg-block">
                   <li>
-                    <a href="index.html">Home</a>
+                    <a href="index">Home</a>
                   </li>
-                  <li><a href="about.html">About</a></li>
-                  <li class="has-children">
+                  <li><a href="about">About</a></li>
+                  <li><a href="">Units</a></li>
+                  <!-- <li class="has-children">
                     <a href="apartments.html">Apartments</a>
                     <ul class="dropdown arrow-top">
                       <li><a href="#">Apartments</a></li>
@@ -63,9 +70,10 @@
                         </ul>
                       </li>
                     </ul>
-                  </li>
-                  <li><a href="news.html">News</a></li>
-                  <li class="active"><a href="contact.html">Contact</a></li>
+                  </li> -->
+                  <li><a href="news">News</a></li>
+                  <li class="active"><a href="contact">Contact</a></li>
+                  <li><a href="login">Login</a></li>
                 </ul>
               </nav>
             </div>
@@ -85,7 +93,7 @@
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
     
-    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/hero_bg_1.jpg');"
+    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/labas5.jpg');"
     data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
     <div class="container">
       <div class="row align-items-center justify-content-center">
@@ -154,10 +162,10 @@
             <p class="mb-4 text-black">203 Fake St. Mountain View, San Francisco, California, USA</p>
   
             <p class="mb-0 font-weight-bold text-black">Phone</p>
-            <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+            <p class="mb-4 "><a class="info" href="#">+1 232 3235 324</a></p>
   
             <p class="mb-0 font-weight-bold text-black">Email Address</p>
-            <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+            <p class="mb-0 "><a class="info" href="#">youremail@domain.com</a></p>
   
           </div>
   
@@ -172,7 +180,7 @@
     </div>
   </div>
 
-  <div class="site-section">
+  <!-- <div class="site-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -187,10 +195,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
-    
+<!--     
     <div class="site-section block-13 bg-light">
       <div class="container" data-aos="fade-up">
         <div class="row">
@@ -263,7 +271,7 @@
 
         </div>
       </div>
-    </div>  
+    </div>   -->
     
 
     
@@ -284,13 +292,12 @@
     <footer class="site-footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-8">
             <div class="mb-5">
               <h3 class="footer-heading mb-4">About Apart</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
-            </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit<br> vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum<br> totam quis blanditiis, minima minus odio!</p>            </div>
             <div class="mb-5">
-              <h3 class="footer-heading mb-4">Subscribe</h3>
+              <!-- <h3 class="footer-heading mb-4">Subscribe</h3>
               <form action="#" method="post" class="site-block-subscribe">
                 <div class="input-group mb-3">
                   <input type="text" class="form-control border-secondary bg-transparent" placeholder="Enter your email"
@@ -299,7 +306,7 @@
                     <button class="btn btn-primary rounded-top-right-0" type="button" id="button-addon2">Subscribe</button>
                   </div>
                 </div>
-              </form>
+              </form> -->
             </div>
           </div>
           <div class="col-lg-4 mb-5 mb-lg-0">
@@ -325,7 +332,7 @@
               </div>
             </div>
 
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-12">
                 <h3 class="footer-heading mb-4">Follow Us</h3>
 
@@ -351,21 +358,21 @@
                 </figure>
               </div>
 
-            </div>
+            </div> -->
 
             
 
           </div>
           
-        </div>
+          </div>
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy; 2022
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-          </div>
+            <!-- </p>
+          </div> -->
           
         </div>
       </div>

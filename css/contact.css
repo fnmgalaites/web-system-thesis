@@ -42,3 +42,9 @@
 .text-primary{
     color: #e6b400 !important;
 }
+.info{
+    color: #e6b400 !important;
+}
+.info:hover{
+    color: #e69b00 !important;
+}

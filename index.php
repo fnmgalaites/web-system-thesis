@@ -23,7 +23,7 @@ include("conn.php");
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/fl-bigmug-line.css">
     <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/indexzxc.css">
     
   </head>
@@ -42,15 +42,16 @@ include("conn.php");
             <div class="col-4 col-md-4 col-lg-8">
               <nav class="site-navigation text-right text-md-right" role="navigation">
 
-                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"></a></div>
-                <!-- <span class="icon-menu h3"></span> -->
+                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span>
+</a></div>
 
                 <ul class="site-menu js-clone-nav d-none d-lg-block">
                   <li class="active">
                     <a href="index">Home</a>
                   </li>
                   <li><a href="about">About</a></li>
-                  <li class="has-children">
+                  <li><a href="">Units</a></li>
+                  <!-- <li class="has-children">
                     <a href="apartments.html">Apartments</a>
                     <ul class="dropdown arrow-top">
                       <li><a class="droph" href="#">Apartments</a></li>
@@ -65,9 +66,9 @@ include("conn.php");
                         </ul>
                       </li>
                     </ul>
-                  </li>
-                  <li><a href="news.html">News</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  </li> -->
+                  <li><a href="news">News</a></li>
+                  <li><a href="contact">Contact</a></li>
                   <li><a href="login">Login</a></li>   
                 </ul>
               </nav>
@@ -79,14 +80,14 @@ include("conn.php");
       </div>
     </div>
 
-    <!-- <div class="site-mobile-menu">
+    <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
           <span class="icon-close2 js-menu-toggle"></span>
         </div>
       </div>
       <div class="site-mobile-menu-body"></div>
-    </div> .site-mobile-menu -->
+    </div> <!-- .site-mobile-menu -->
 
     <!-- FOR THE HEADER BACKGROUND -->
     
@@ -206,34 +207,6 @@ include("conn.php");
         
       </div>
     </div> -->
-
-
-    <!-- OWNER OF THE RENTAL APARTMENT || THE CLIENT -->
-    
-    <div class="site-section block-13">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-            <h2 class="mb-5">Owner of Tan Rental Apartment</h2>
-            <p>Hello po Tita</p>
-          </div>
-        </div>
-        
-          
-          <div class="text-center p-3 p-md-5 bg-white">
-            <div class="mb-4">            
-              <img src="images/virginia.jpg" alt="Image" class="w-50 mx-50 img-fluid rounded-circle">
-            </div>
-            <div class="text-black">
-              <h3 class="font-weight-light h5"><b>Virginia L. Tan</b></h3>
-              <p class="font-italic">&ldquo;Hello po Tita&rdquo;</p>
-            </div>
-          </div>
-        
-      </div>
-    </div>  
-    
-
     
     <!-- FOR THE NEWS AND EVENTS IN THE APARTMENT -->
 

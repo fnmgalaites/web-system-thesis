@@ -1,13 +1,15 @@
+<?php
+include("conn.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Apart &mdash; Colorlib Website Template</title>
+    <title>News &mdash; Tan Rental Apartments</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Oswald:400,700"> 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
@@ -18,11 +20,9 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/fl-bigmug-line.css">
-    
-  
     <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/news.css">
     
   </head>
   <body>
@@ -36,7 +36,7 @@
         <div class="container py-1">
           <div class="row align-items-center">
             <div class="col-8 col-md-8 col-lg-4">
-              <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><strong>Apart<span class="text-primary">.</span></strong></a></h1>
+              <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><strong>Tan<span class="text-primary">.</span></strong></a></h1>
             </div>
             <div class="col-4 col-md-4 col-lg-8">
               <nav class="site-navigation text-right text-md-right" role="navigation">
@@ -45,27 +45,28 @@
 
                 <ul class="site-menu js-clone-nav d-none d-lg-block">
                   <li>
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li><a href="about.html">About</a></li>
-                  <li class="has-children">
+                  <a href="index">Home</a></li>
+                  <li><a href="about">About</a></li>
+                  <li><a href="">Units</a></li>
+                  <!-- <li class="has-children">
                     <a href="apartments.html">Apartments</a>
                     <ul class="dropdown arrow-top">
-                      <li><a href="#">Apartments</a></li>
-                      <li><a href="#">Rooms</a></li>
-                      <li><a href="#">Suites</a></li>
+                      <li><a class="droph" href="#">Apartments</a></li>
+                      <li><a class="droph" href="#">Rooms</a></li>
+                      <li><a class="droph" href="#">Suites</a></li>
                       <li class="has-children">
-                        <a href="#">Sub Menu</a>
+                        <a class="droph" href="#">Sub Menu</a>
                         <ul class="dropdown">
-                          <li><a href="#">Menu One</a></li>
-                          <li><a href="#">Menu Two</a></li>
-                          <li><a href="#">Menu Three</a></li>
+                          <li><a class="droph" href="#">Menu One</a></li>
+                          <li><a class="droph" href="#">Menu Two</a></li>
+                          <li><a class="droph" href="#">Menu Three</a></li>
                         </ul>
                       </li>
                     </ul>
-                  </li>
-                  <li class="active"><a href="news.html">News</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  </li> -->
+                  <li class="active"><a href="news">News</a></li>
+                  <li><a href="contact">Contact</a></li>
+                  <li><a href="login">Login</a></li>   
                 </ul>
               </nav>
             </div>
@@ -174,13 +175,13 @@
     <footer class="site-footer bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-8">
             <div class="mb-5">
               <h3 class="footer-heading mb-4">About Apart</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
             </div>
             <div class="mb-5">
-              <h3 class="footer-heading mb-4">Subscribe</h3>
+              <!-- <h3 class="footer-heading mb-4">Subscribe</h3>
               <form action="#" method="post" class="site-block-subscribe">
                 <div class="input-group mb-3">
                   <input type="text" class="form-control border-secondary bg-transparent" placeholder="Enter your email"
@@ -189,7 +190,7 @@
                     <button class="btn btn-primary rounded-top-right-0" type="button" id="button-addon2">Subscribe</button>
                   </div>
                 </div>
-              </form>
+              </form> -->
             </div>
           </div>
           <div class="col-lg-4 mb-5 mb-lg-0">
@@ -215,7 +216,7 @@
               </div>
             </div>
 
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-12">
                 <h3 class="footer-heading mb-4">Follow Us</h3>
 
@@ -226,11 +227,11 @@
                   <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
                 </div>
               </div>
-            </div>
+            </div> -->
 
           </div>
 
-          <div class="col-lg-4 mb-5 mb-lg-0">
+          <!-- <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="mb-5">
               <h3 class="footer-heading mb-4">Watch Live Streaming</h3>
 
@@ -241,21 +242,21 @@
                 </figure>
               </div>
 
-            </div>
+            </div> -->
 
             
 
           </div>
           
-        </div>
+          </div>
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy; 2022
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-          </div>
+            <!-- </p>
+          </div> -->
           
         </div>
       </div>
