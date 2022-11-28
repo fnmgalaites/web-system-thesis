@@ -5,7 +5,7 @@ include("conn.php");
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Apart &mdash; Colorlib Website Template</title>
+    <title>Contact &mdash; Tan Rental Apartments</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

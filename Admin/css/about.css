@@ -1,0 +1,44 @@
+.btn-primary{
+    border-color: #e6b400;
+    background-color: #e6b400;
+}
+.btn-primary:hover{
+    border-color: #e69b00;
+    background-color: #e69b00;
+}
+.droph:hover{
+    color:#e6b400 !important;
+}
+.unit-9 h2{
+    background-color: #e6b400;
+}
+.padded-multi-line-primary, .unit-9 h2 {
+    background: #e6b400;
+    -webkit-box-shadow: 10px 0 0 #e6b400, 0px 0 0 #e6b400;
+    box-shadow: 10px 0 0 #e6b400, 0px 0 0 #e6b400; 
+}
+.image{
+    object-fit:fill;
+}
+::after{
+    background-color: #e6b400 !important;
+}
+.bg-primary{
+    background-color: #e6b400 !important;
+}
+.owl-dot:active{
+    background-color: #e6b400 !important;
+}
+.w-50{
+    max-width: 20% !important;
+}
+.social-icon:hover{
+    background-color: #e69b00 !important;
+}
+.footer-heading:before{
+    height:1.5px;
+    background-color: #e6b400 !important;
+}
+.text-primary{
+    color: #e6b400 !important;
+}

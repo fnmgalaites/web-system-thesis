@@ -1,5 +1,7 @@
 <?php
 include("conn.php");
+session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -253,7 +255,7 @@ include("conn.php");
       <div class="container">
         <div class="row">
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-facebook text-white"></span></a>
-          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-twitter text-white"></span></a>
+          <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon- twitter text-white"></span></a>
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-linkedin text-white"></span></a>
           <a href="#" class="col-2 text-center py-4 social-icon d-block"><span class="icon-pinterest text-white"></span></a>

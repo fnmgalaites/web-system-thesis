@@ -1,5 +1,71 @@
 <?php
 include("conn.php");
+
+session_start();
+
+if(isset($_SESSION["username"])){
+  $username = $_SESSION["username"];
+  $query_acc_type = mysqli_query($con, "SELECT * FROM logintb WHERE username='$username'");
+  $get_acc_type = mysqli_fetch_assoc($query_acc_type);
+
+  if($acc_type==1){
+    echo "<script>window.location.href='Admin';</script>";
+  }else{
+    echo "<script>window.location.href='Tenants';</script>";
+  }
+  
+}
+
+  $username=$password="";
+  $usernameErr=$passwordErr="";
+
+  if(isset($_POST["login_submit"])){
+    if(empty($_POST["username"])){
+      $usernameErr = "Username is Required!";
+    }else{
+      $username = $_POST["username"];
+    }
+
+    if(empty($_POST["password"])){
+      $passwordErr = "Password is Required!";
+    }else{
+      $password = $_POST["password"];
+    }
+  }
+
+  if($username AND $password){
+    $check_username = mysqli_query($con, "SELECT * FROM logintb WHERE username='$username'");
+    $check_row = mysqli_num_rows($check_username);
+
+    if($check_row > 0){
+      $fetch = mysqli_fetch_assoc($check_username);
+      $db_password = $fetch["password"];
+
+      $acc_type = $fetch["acc_type"];
+
+      if($acc_type=="1"){
+        if($db_password == $password){
+          $_SESSION["username"]=$username;
+          echo "<script>window.location.href='Admin';</script>";
+        }else{
+          $passwordErr = "Your password is incorrect";
+        }
+
+      }else if($acc_type=="2"){
+        if($db_password == $password){
+          $_SESSION["username"]=$username;
+          echo "<script>window.location.href='Tenants';</script>";
+        }else{
+          $passwordErr = "Your password is incorrect";
+        }
+      }
+
+    }else{
+      $usernameErr = "Username not registered!";
+    }
+
+  }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

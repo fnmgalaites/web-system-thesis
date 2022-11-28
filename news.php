@@ -86,7 +86,7 @@ include("conn.php");
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
     
-    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/hero_bg_1.jpg');"
+    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/labas5.jpg');"
     data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
     <div class="container">
       <div class="row align-items-center justify-content-center">
